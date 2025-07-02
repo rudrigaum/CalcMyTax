@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1883A8EF2E15AC7A0027D86E /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 1883A8EE2E15AC7A0027D86E /* SwiftUICharts */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		1883A8DF2E15A7670027D86E /* CalcMyTax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalcMyTax.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1883A8EF2E15AC7A0027D86E /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = CalcMyTax;
 			packageProductDependencies = (
+				1883A8EE2E15AC7A0027D86E /* SwiftUICharts */,
 			);
 			productName = CalcMyTax;
 			productReference = 1883A8DF2E15A7670027D86E /* CalcMyTax.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 1883A8D62E15A7670027D86E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1883A8ED2E15AC7A0027D86E /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1883A8E02E15A7670027D86E /* Products */;
 			projectDirPath = "";
@@ -324,6 +333,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1883A8ED2E15AC7A0027D86E /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1883A8EE2E15AC7A0027D86E /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1883A8ED2E15AC7A0027D86E /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1883A8D72E15A7670027D86E /* Project object */;
 }
