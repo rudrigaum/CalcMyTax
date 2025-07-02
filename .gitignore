@@ -1,0 +1,35 @@
+# Xcode
+.DS_Store
+*.pbxuser
+*.xcuserdatad
+*.xcscmblueprint
+*.xccheckout
+*.moved-aside
+DerivedData/
+build/
+*~
+*.swp
+.idea/
+
+# Swift Package Manager (SPM)
+.build/
+
+# CocoaPods
+Pods/
+!Pods/.gitignore # Don't ignore .gitignore in Pods directory
+# Podfile.lock # Uncomment to ignore Podfile.lock if you manage dependencies differently
+
+# Carthage
+Carthage/Build/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+
+# Nível de Projeto/Usuário
+xcuserdata/
+
+# Outros
+.swiftpm/
+.bundle/
