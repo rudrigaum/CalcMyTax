@@ -33,19 +33,24 @@ struct ContentView: View {
                         .font(.caption)
                 }
                 
-                NavigationLink(destination: ResultsView(), isActive: $isSalaryValid, label: {
-                    Text("Calculate Tax")
-                        .bold()
-                        .frame(width: 200, height: 50)
-                        .background(Color.blue)
-                        .foregroundStyle(Color.white)
-                        .cornerRadius(10)
-                        .onTapGesture {
-                            validateAndNavigateToResults()
-                        }
-                })
+                NavigationLink(destination: ResultsView(annualSalary: Double(salary) ?? 0.0), isActive: $isSalaryValid
+                ){
+                    Button(action: {
+                        validateAndNavigateToResults()
+                    }) {
+                        Text("Calculate Tax")
+                            .bold()
+                            .frame(width: 200, height: 50)
+                            .background(Color.blue)
+                            .foregroundStyle(Color.white)
+                            .cornerRadius(10)
+                            .onTapGesture {
+                                validateAndNavigateToResults()
+                            }
+                    }
+                }
+                .padding()
             }
-            .padding()
         }
     }
     
@@ -65,8 +70,6 @@ struct ContentView: View {
         }
     }
 }
-
-
 
 #Preview {
     ContentView()
